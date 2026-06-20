@@ -18,8 +18,8 @@ except ImportError:
 
 
 # Change this value before sharing the app.
-OWNER_PASSWORD = "change-this-password"
-GEMINI_API_KEY = "paste-your-key-here"
+OWNER_PASSWORD = st.secrets["OWNER_PASSWORD"]
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 GEMINI_MODEL = "gemini-2.5-flash"
 
 APP_DIR = Path(__file__).resolve().parent
